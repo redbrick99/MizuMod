@@ -12,7 +12,7 @@
     <defName>Mizu_DrinkWater</defName>
     <label>NWNL: Drink water</label>
     <priority>4</priority>
-    <helpText>The cololists can drink bottled water, but animals can't drink it. Animals can drink water in water boxes or from drawing water spots, but even if you do not do anything for animals, they drink water spontaneously in rivers and ponds.</helpText>
+    <helpText>The colonists can drink bottled water, but animals can't drink it. Animals can drink water in water boxes or from drawing water spots, but even if you do not do anything for animals, they drink water spontaneously in rivers and ponds.</helpText>
   </ConceptDef>
   
   <ConceptDef>

@@ -4,6 +4,7 @@
   <HediffDef>
     <defName>Mizu_Dehydration</defName>
     <label>dehydration</label>
+    <description>Extended duration without fresh water. Initial effects are mild, but prolonged lack of water can be life-threatening.</description>
     <lethalSeverity>1</lethalSeverity>
     <scenarioCanAdd>true</scenarioCanAdd>
     <stages>
@@ -78,6 +79,7 @@
   <HediffDef>
     <defName>Mizu_DrankSeaWater</defName>
     <label>drank sea water</label>
+    <description>Seawater contains too much salt, and drinking it can cause electrolyte imbalance and affects organs' ability to filter blood.</description>
     <scenarioCanAdd>true</scenarioCanAdd>
     <hediffClass>HediffWithComps</hediffClass>
     <defaultLabelColor>(0.8, 0.8, 0.35)</defaultLabelColor>
@@ -109,6 +111,7 @@
   <HediffDef>
     <defName>Mizu_IcecreamHeadache</defName>
     <label>Icecream headache</label>
+    <description>Eating frozen things too fast can cause a nasty headache.</description>
     <scenarioCanAdd>true</scenarioCanAdd>
     <hediffClass>HediffWithComps</hediffClass>
     <defaultLabelColor>(0.8, 0.8, 0.35)</defaultLabelColor>
@@ -136,6 +139,7 @@
   <HediffDef>
     <defName>Mizu_Nursed</defName>
     <label>nursed</label>
+    <description>?</description>
     <scenarioCanAdd>true</scenarioCanAdd>
     <hediffClass>HediffWithComps</hediffClass>
     <defaultLabelColor>(0.5, 0.5, 0.9)</defaultLabelColor>

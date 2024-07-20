@@ -2,71 +2,68 @@
 <Patch>
   
   <!-- 雪だるまに作成素材をセットする -->
-  <Operation Class="PatchOperationSequence">
-    <success>Always</success>
-    <operations>
-      <li Class="PatchOperationTest">
-        <xpath>*/ThingDef[defName = "Snowman"]/costList</xpath>
-        <success>Invert</success>
-      </li>
-      <li Class="PatchOperationAdd">
-        <xpath>*/ThingDef[defName = "Snowman"]</xpath>
-        <value>
-          <costList/>
-        </value>
-      </li>
-    </operations>
-  </Operation>
-  <Operation Class="PatchOperationAdd">
+  <Operation Class="PatchOperationConditional">
     <xpath>*/ThingDef[defName = "Snowman"]/costList</xpath>
-    <value>
-      <Mizu_Snowball>10</Mizu_Snowball>
-    </value>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>*/ThingDef[defName = "Snowman"]</xpath>
+      <value>
+        <costList>
+          <Mizu_Snowball>10</Mizu_Snowball>
+        </costList>
+      </value>
+    </nomatch>
+    <match Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName = "Snowman"]/costList</xpath>
+      <value>
+        <Mizu_Snowball>10</Mizu_Snowball>
+      </value>
+    </match>
   </Operation>
   
   <!-- 雪だるまに破壊メッセージをセットする -->
-  <Operation Class="PatchOperationSequence">
-    <success>Always</success>
-    <operations>
-      <li Class="PatchOperationTest">
-        <xpath>*/ThingDef[defName = "Snowman"]/comps</xpath>
-        <success>Invert</success>
-      </li>
-      <li Class="PatchOperationAdd">
-        <xpath>*/ThingDef[defName = "Snowman"]</xpath>
-        <value>
-          <comps/>
-        </value>
-      </li>
-    </operations>
-  </Operation>
-  <Operation Class="PatchOperationAdd">
+  <Operation Class="PatchOperationConditional">
     <xpath>*/ThingDef[defName = "Snowman"]/comps</xpath>
-    <value>
-      <li Class="MizuMod.CompProperties_DestroyMessage">
-        <messageKey>MizuDeconstructSnowmanMessage</messageKey>
-        <destroyModes>
-          <li>Deconstruct</li>
-        </destroyModes>
-      </li>
-    </value>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>*/ThingDef[defName = "Snowman"]</xpath>
+      <value>
+        <comps>
+          <li Class="MizuMod.CompProperties_DestroyMessage">
+            <messageKey>MizuDeconstructSnowmanMessage</messageKey>
+            <destroyModes>
+              <li>Deconstruct</li>
+            </destroyModes>
+          </li>
+        </comps>
+      </value>
+    </nomatch>
+    <match Class="PatchOperationAdd">
+      <xpath>*/ThingDef[defName = "Snowman"]/comps</xpath>
+      <value>
+        <li Class="MizuMod.CompProperties_DestroyMessage">
+          <messageKey>MizuDeconstructSnowmanMessage</messageKey>
+          <destroyModes>
+            <li>Deconstruct</li>
+          </destroyModes>
+        </li>
+      </value>
+    </match>
   </Operation>
   
   <!-- 雪だるまを水カテゴリで建造可能にする -->
-  <Operation Class="PatchOperationSequence">
-    <success>Always</success>
-    <operations>
-      <li Class="PatchOperationTest">
-        <xpath>*/ThingDef[defName = "Snowman"]/designationCategory</xpath>
-        <success>Invert</success>
-      </li>
-      <li Class="PatchOperationAdd">
-        <xpath>*/ThingDef[defName = "Snowman"]</xpath>
-        <value>
-          <designationCategory>Mizu</designationCategory>
-        </value>
-      </li>
-    </operations>
+  <Operation Class="PatchOperationConditional">
+    <xpath>*/ThingDef[defName = "Snowman"]/designationCategory</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>*/ThingDef[defName = "Snowman"]</xpath>
+      <value>
+        <designationCategory>Mizu</designationCategory>
+      </value>
+    </nomatch>
+    <match Class="PatchOperationReplace">
+      <xpath>*/ThingDef[defName = "Snowman"]/designationCategory</xpath>
+      <value>
+        <designationCategory>Mizu</designationCategory>
+      </value>
+    </match>
   </Operation>
 
 </Patch>

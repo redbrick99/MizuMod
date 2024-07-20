@@ -4,28 +4,26 @@
   <!-- 種族ごとの設定 -->
 
   <!-- アルファビーバー -->
-  <Operation Class="PatchOperationSequence">
-    <success>Always</success>
-    <operations>
-      <li Class="PatchOperationTest">
-        <xpath>*/ThingDef[defName = "Alphabeaver"]/modExtensions</xpath>
-        <success>Invert</success>
-      </li>
-      <li Class="PatchOperationAdd">
-        <xpath>*/ThingDef[defName = "Alphabeaver"]</xpath>
-        <value>
-          <modExtensions/>
-        </value>
-      </li>
-    </operations>
-  </Operation>
-  <Operation Class="PatchOperationAdd">
+  <Operation Class="PatchOperationConditional">
     <xpath>*/ThingDef[defName = "Alphabeaver"]/modExtensions</xpath>
-    <value>
-      <li Class="MizuMod.DefExtension_RaceThirstRate">
-        <baseThirstRate>0.6</baseThirstRate>
-      </li>
-    </value>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>*/ThingDef[defName = "Alphabeaver"]</xpath>
+      <value>
+        <modExtensions>
+          <li Class="MizuMod.DefExtension_RaceThirstRate">
+            <baseThirstRate>0.6</baseThirstRate>
+          </li>
+        </modExtensions> 
+      </value>
+    </nomatch>
+    <match Class="PatchOperationAdd">
+      <xpath>*/ThingDef[defName = "Alphabeaver"]/modExtensions</xpath>
+      <value>
+        <li Class="MizuMod.DefExtension_RaceThirstRate">
+          <baseThirstRate>0.6</baseThirstRate>
+        </li>
+      </value>
+    </match>
   </Operation>
 
 </Patch>

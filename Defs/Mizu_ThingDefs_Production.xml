@@ -50,7 +50,7 @@
     <comps>
       <li Class="MizuMod.CompProperties_WaterSource">
         <sourceType>Building</sourceType>
-        <getSound>Ingest_Beer</getSound>
+        <getSound>Ingest_Water</getSound>
         <baseDrinkTicks>2000</baseDrinkTicks>
         <needManipulate>false</needManipulate>
       </li>
@@ -147,7 +147,7 @@
     <comps>
       <li Class="MizuMod.CompProperties_WaterSource">
         <sourceType>Building</sourceType>
-        <getSound>Ingest_Beer</getSound>
+        <getSound>Ingest_Water</getSound>
         <baseDrinkTicks>1200</baseDrinkTicks>
         <needManipulate>true</needManipulate>
       </li>
@@ -203,8 +203,6 @@
     <building>
       <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
       <heatPerTickWhileWorking>0.10</heatPerTickWhileWorking>
-      <workSpeedPenaltyOutdoors>true</workSpeedPenaltyOutdoors>
-      <workSpeedPenaltyTemperature>true</workSpeedPenaltyTemperature>
     </building>
     <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
     <castEdgeShadows>true</castEdgeShadows>
@@ -296,7 +294,7 @@
       <graphicClass>Graphic_Single</graphicClass>
       <linkType>Basic</linkType>
       <linkFlags>
-        <li>Custom5</li>
+        <li>Custom10</li>
       </linkFlags>
       <damageData>
         <rect>(0,0.35,1,0.3)</rect>
@@ -308,7 +306,7 @@
       <isInert>true</isInert>
       <isEdifice>false</isEdifice>
     </building>
-    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <altitudeLayer>Conduits</altitudeLayer>
     <passability>Standable</passability>
     <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
     <statBases>
@@ -642,7 +640,7 @@
     <comps>
       <li Class="MizuMod.CompProperties_WaterSource">
         <sourceType>Building</sourceType>
-        <getSound>Ingest_Beer</getSound>
+        <getSound>Ingest_Water</getSound>
         <baseDrinkTicks>2000</baseDrinkTicks>
         <needManipulate>false</needManipulate>
       </li>
@@ -725,7 +723,7 @@
       </li>
       <li Class="MizuMod.CompProperties_WaterSource">
         <sourceType>Building</sourceType>
-        <getSound>Ingest_Beer</getSound>
+        <getSound>Pour_Water</getSound>
         <baseDrinkTicks>400</baseDrinkTicks>
         <needManipulate>true</needManipulate>
       </li>

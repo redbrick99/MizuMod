@@ -49,7 +49,7 @@
       </li>
       <li Class="MizuMod.CompProperties_WaterSource">
         <sourceType>Item</sourceType>
-        <getSound>Ingest_Beer</getSound>
+        <getSound>Ingest_Water</getSound>
         <baseDrinkTicks>100</baseDrinkTicks>
         <waterType>ClearWater</waterType>
         <needManipulate>true</needManipulate>
@@ -85,7 +85,7 @@
       </li>
       <li Class="MizuMod.CompProperties_WaterSource">
         <sourceType>Item</sourceType>
-        <getSound>Ingest_Beer</getSound>
+        <getSound>Ingest_Water</getSound>
         <baseDrinkTicks>100</baseDrinkTicks>
         <waterType>NormalWater</waterType>
         <needManipulate>true</needManipulate>
@@ -121,7 +121,7 @@
       </li>
       <li Class="MizuMod.CompProperties_WaterSource">
         <sourceType>Item</sourceType>
-        <getSound>Ingest_Beer</getSound>
+        <getSound>Ingest_Water</getSound>
         <baseDrinkTicks>100</baseDrinkTicks>
         <waterType>RawWater</waterType>
         <needManipulate>true</needManipulate>
@@ -157,7 +157,7 @@
       </li>
       <li Class="MizuMod.CompProperties_WaterSource">
         <sourceType>Item</sourceType>
-        <getSound>Ingest_Beer</getSound>
+        <getSound>Ingest_Water</getSound>
         <baseDrinkTicks>100</baseDrinkTicks>
         <waterType>MudWater</waterType>
         <needManipulate>true</needManipulate>
@@ -193,7 +193,7 @@
       </li>
       <li Class="MizuMod.CompProperties_WaterSource">
         <sourceType>Item</sourceType>
-        <getSound>Ingest_Beer</getSound>
+        <getSound>Ingest_Water</getSound>
         <baseDrinkTicks>100</baseDrinkTicks>
         <waterType>SeaWater</waterType>
         <needManipulate>true</needManipulate>
@@ -256,7 +256,7 @@
       </li>
       <li Class="MizuMod.CompProperties_WaterSource">
         <sourceType>Item</sourceType>
-        <getSound>Ingest_Beer</getSound>
+        <getSound>Ingest_Water</getSound>
         <baseDrinkTicks>1000</baseDrinkTicks>
         <waterType>ClearWater</waterType>
         <needManipulate>true</needManipulate>
@@ -288,7 +288,7 @@
       </li>
       <li Class="MizuMod.CompProperties_WaterSource">
         <sourceType>Item</sourceType>
-        <getSound>Ingest_Beer</getSound>
+        <getSound>Ingest_Water</getSound>
         <baseDrinkTicks>1000</baseDrinkTicks>
         <waterType>NormalWater</waterType>
         <needManipulate>true</needManipulate>
@@ -320,7 +320,7 @@
       </li>
       <li Class="MizuMod.CompProperties_WaterSource">
         <sourceType>Item</sourceType>
-        <getSound>Ingest_Beer</getSound>
+        <getSound>Ingest_Water</getSound>
         <baseDrinkTicks>1000</baseDrinkTicks>
         <waterType>RawWater</waterType>
         <needManipulate>true</needManipulate>
@@ -352,7 +352,7 @@
       </li>
       <li Class="MizuMod.CompProperties_WaterSource">
         <sourceType>Item</sourceType>
-        <getSound>Ingest_Beer</getSound>
+        <getSound>Ingest_Water</getSound>
         <baseDrinkTicks>1000</baseDrinkTicks>
         <waterType>MudWater</waterType>
         <needManipulate>true</needManipulate>
@@ -384,7 +384,7 @@
       </li>
       <li Class="MizuMod.CompProperties_WaterSource">
         <sourceType>Item</sourceType>
-        <getSound>Ingest_Beer</getSound>
+        <getSound>Ingest_Water</getSound>
         <baseDrinkTicks>1000</baseDrinkTicks>
         <waterType>SeaWater</waterType>
         <needManipulate>true</needManipulate>
@@ -450,7 +450,7 @@
       </li>
       <li Class="MizuMod.CompProperties_WaterSource">
         <sourceType>Item</sourceType>
-        <getSound>Ingest_Beer</getSound>
+        <getSound>Ingest_Water</getSound>
         <baseDrinkTicks>100</baseDrinkTicks>
         <waterType>NoWater</waterType>
         <dependIngredients>true</dependIngredients>
@@ -510,7 +510,7 @@
       </li>
       <li Class="MizuMod.CompProperties_WaterSource">
         <sourceType>Item</sourceType>
-        <getSound>Ingest_Beer</getSound>
+        <getSound>Ingest_Water</getSound>
         <baseDrinkTicks>500</baseDrinkTicks>
         <waterType>RawWater</waterType>
         <needManipulate>true</needManipulate>
@@ -546,7 +546,7 @@
       </li>
       <li Class="MizuMod.CompProperties_WaterSource">
         <sourceType>Item</sourceType>
-        <getSound>Ingest_Beer</getSound>
+        <getSound>Ingest_Water</getSound>
         <baseDrinkTicks>500</baseDrinkTicks>
         <waterType>RawWater</waterType>
         <needManipulate>true</needManipulate>
